@@ -16,5 +16,3 @@ def caesar_cipher(string, key)
     }
     return string.join
 end
-
-p caesar_cipher("What a string!", 5)
