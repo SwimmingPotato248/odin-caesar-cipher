@@ -6,15 +6,15 @@ def caesar_cipher(string, key)
            while e > 90
             e = e - 26
            end
-        elsif (97..112).include?(e)  
+        elsif (97..122).include?(e)  
             e += key
-            while e > 112
+            while e > 122
                 e = e - 26
             end
         end
         e.chr
     }
-    puts string.join
+    return string.join
 end
 
-caesar_cipher("What a string!", 5)
+p caesar_cipher("What a string!", 5)
